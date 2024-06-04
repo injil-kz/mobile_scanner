@@ -1,3 +1,5 @@
+CLONE FROM https://github.com/juliansteenbakker/mobile_scanner
+
 # mobile_scanner
 
 [![pub package](https://img.shields.io/pub/v/mobile_scanner.svg)](https://pub.dev/packages/mobile_scanner)
