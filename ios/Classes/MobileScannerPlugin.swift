@@ -168,7 +168,7 @@ public class MobileScannerPlugin: NSObject, FlutterPlugin {
     
     /// Sets the zoomScale.
     private func setInvertImage(_ call: FlutterMethodCall, _ result: @escaping FlutterResult) {
-        let invert = call.arguments as? Bool
+        let invert: Bool = (call.arguments as! Dictionary<String, Any?>)["invertImage"] as? Bool ?? false
         if (invert == nil) {
             result(FlutterError(code: "MobileScanner",
                                 message: "You must provide a invert (bool) when calling setInvertImage",
